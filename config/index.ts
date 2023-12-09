@@ -3,11 +3,11 @@ export const APP_ID = `${process.env.NEXT_PUBLIC_APP_ID}`
 export const API_KEY = `${process.env.NEXT_PUBLIC_APP_KEY}`
 export const API_URL = `${process.env.NEXT_PUBLIC_API_URL}`
 export const APP_INFO: AppInfo = {
-  title: 'Health AI Demo',
-  description: 'HealthAI Powered by DigitbiteAI stands at the nexus of AI innovation and practical application. Founded to empower businesses in the digital era, our expert team crafts tailored AI solutions that drive growth and efficiency. With DigitbiteAI, experience where cutting-edge meets real-world impact.',
-  copyright: '2023',
-  privacy_policy: 'https://digitbiteai.co.uk/privacy-policy/',
-  default_language: 'en',
+  title: 'Chat APP',
+  description: '',
+  copyright: '',
+  privacy_policy: '',
+  default_language: 'zh-Hans',
 }
 
 export const isShowPrompt = false
