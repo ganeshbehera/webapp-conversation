@@ -6,29 +6,26 @@ export type AppIconProps = {
   size?: 'tiny' | 'small' | 'medium' | 'large'
   rounded?: boolean
   icon?: string
-  background?: string
   className?: string
+  imageUrl: string
 }
 
 const AppIcon: FC<AppIconProps> = ({
-  size = 'medium',
+  size = 'large',
   rounded = false,
-  background,
   className,
+  imageUrl = 'https://grayfords.co.uk/wp-content/uploads/2023/02/logo-1.png',
 }) => {
   return (
     <span
       className={classNames(
         style.appIcon,
-        size !== 'medium' && style[size],
+        size !== 'large' && style[size],
         rounded && style.rounded,
         className ?? '',
       )}
-      style={{
-        background,
-      }}
     >
-      🤖
+      <img src={imageUrl} alt="App Icon" />
     </span>
   )
 }
