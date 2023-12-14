@@ -5,7 +5,6 @@ import style from './style.module.css'
 export type AppIconProps = {
   size?: 'tiny' | 'small' | 'medium' | 'large'
   rounded?: boolean
-  icon?: string
   className?: string
   imageUrl: string
 }
@@ -20,12 +19,12 @@ const AppIcon: FC<AppIconProps> = ({
     <span
       className={classNames(
         style.appIcon,
-        size !== 'large' && style[size],
+        size && style[size],
         rounded && style.rounded,
         className ?? '',
       )}
     >
-      <img src={imageUrl} alt="App Icon" />
+      <img src={imageUrl} alt="App Icon" className={style.appIconImage} />
     </span>
   )
 }
