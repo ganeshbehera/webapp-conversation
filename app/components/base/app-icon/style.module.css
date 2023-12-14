@@ -19,6 +19,6 @@
 }
 
 .appIconImage {
-  max-width: 120px; /* Set the maximum width */
+  max-width: 200px; /* Set the maximum width */
   height: auto; /* Maintain the aspect ratio */
 }
