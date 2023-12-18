@@ -296,10 +296,10 @@ const Welcome: FC<IWelcomeProps> = ({
   }
 
   return (
-    <div className='relative mobile:min-h-[48px] tablet:min-h-[64px]'>
+    <div className='relative mobile:min-h-[48px] tablet:min-h-[64px]' style={{ backgroundColor: '#1f2839' }}>
       {hasSetInputs && renderHeader()}
       <div className='mx-auto pc:w-[794px] max-w-full mobile:w-full px-3.5'>
-        {/*  Has't set inputs  */}
+        {/*  Hasn't set inputs  */}
         {
           !hasSetInputs && (
             <div className='mobile:pt-[72px] tablet:pt-[128px] pc:pt-[200px]'>
@@ -317,10 +317,9 @@ const Welcome: FC<IWelcomeProps> = ({
         {/* Has set inputs */}
         {hasSetInputs && renderHasSetInputs()}
 
-        {/* foot */}
+        {/* Footer */}
         {!hasSetInputs && (
           <div className='mt-4 flex justify-between items-center h-8 text-xs text-gray-400'>
-
             {siteInfo.privacy_policy
               ? <div>{t('app.chat.privacyPolicyLeft')}
                 <a
@@ -333,8 +332,15 @@ const Welcome: FC<IWelcomeProps> = ({
               </div>}
           </div>
         )}
+
+        {/* Privacy Notice */}
+        <div className='privacy-notice mt-4 px-3.5' style={{ fontSize: '10px', color: '#fff' }}>
+          <p>
+            We may collect personal information, such as your name and email address, when you interact with our Russell AI. We will only use this information to provide support and respond to your inquiries. We will not share your personal information with third parties unless we have your consent or are required by law to do so. By using our website and interacting with Russell you agree to the terms of this Privacy Notice and Disclaimer. If you have any questions or concerns about our privacy practices, please contact us at enquiries@grayfords.co.uk.
+          </p>
+        </div>
       </div>
-    </div >
+    </div>
   )
 }
 

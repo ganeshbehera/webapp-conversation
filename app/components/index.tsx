@@ -416,7 +416,7 @@ const Main: FC = () => {
           </div>
         )}
         {/* main */}
-        <div className='flex-grow flex flex-col h-[calc(100vh_-_3rem)] overflow-y-auto'>
+        <div className='flex-grow flex flex-col h-[calc(100vh_-_3rem)] overflow-y-auto' style={{ backgroundColor: '#1f2839' }}>
           <ConfigSence
             conversationName={conversationName}
             hasSetInputs={hasSetInputs}
