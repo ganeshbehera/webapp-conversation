@@ -82,7 +82,7 @@ const Welcome: FC<IWelcomeProps> = ({
 
   const renderHeader = () => {
     return (
-      <div className='absolute top-0 left-0 right-0 flex items-center justify-between border-b border-gray-100 mobile:h-12 tablet:h-16 px-8 bg-white'>
+      <div className='absolute top-0 left-0 right-0 flex items-center justify-between border-b border-gray-100 mobile:h-12 tablet:h-16 px-8 bg-white' style={{ display: 'none' }}>
         <div className='text-gray-900'>{conversationName}</div>
       </div>
     )
@@ -332,13 +332,6 @@ const Welcome: FC<IWelcomeProps> = ({
               </div>}
           </div>
         )}
-
-        {/* Privacy Notice */}
-        <div className='privacy-notice mt-4 px-3.5' style={{ fontSize: '10px', color: '#fff' }}>
-          <p>
-            We may collect personal information, such as your name and email address, when you interact with our Russell AI. We will only use this information to provide support and respond to your inquiries. We will not share your personal information with third parties unless we have your consent or are required by law to do so. By using our website and interacting with Russell you agree to the terms of this Privacy Notice and Disclaimer. If you have any questions or concerns about our privacy practices, please contact us at enquiries@grayfords.co.uk.
-          </p>
-        </div>
       </div>
     </div>
   )
