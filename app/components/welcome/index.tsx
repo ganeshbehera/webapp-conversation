@@ -302,7 +302,7 @@ const Welcome: FC<IWelcomeProps> = ({
         {/*  Hasn't set inputs  */}
         {
           !hasSetInputs && (
-            <div className='mobile:pt-[72px] tablet:pt-[128px] pc:pt-[30px]'>
+            <div className='mobile:pt-[72px] tablet:pt-[128px] pc:pt-[100px]'>
               {hasVar
                 ? (
                   renderVarPanel()
@@ -319,7 +319,7 @@ const Welcome: FC<IWelcomeProps> = ({
 
         {/* Footer */}
         {!hasSetInputs && (
-          <div className='mt-4 flex justify-between items-center h-8 text-xs text-gray-400'>
+          <div style={{ padding: '60px' }} className='mt-4 flex justify-between items-center h-8 text-xs text-gray-400'>
             {siteInfo.privacy_policy
               ? <div>{t('app.chat.privacyPolicyLeft')}
                 <a

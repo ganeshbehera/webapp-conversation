@@ -15,7 +15,7 @@ export const AppInfoComp: FC<{ siteInfo: AppInfo }> = ({ siteInfo }) => {
   return (
     <div>
       <div className="my-4 mx-auto max-w-full text-center text-gray-700">
-        <h1 style={{ fontSize: '26px', paddingBottom: '20px' }}>Welcome to our very own Legal AI assistant “Russell“</h1>
+        <h1 style={{ fontSize: '26px', paddingBottom: '20px', lineHeight: '1.2em' }}>Welcome to our very own Legal AI assistant “Russell“</h1>
         <p style={{ fontSize: '16px', lineHeight: '1.2em' }}>Russell will provide general information and support on various topics related to our services. He is not designed to provide legal advice and you should not rely on the information provided by the AI as a substitute for professional solicitor advice. Please be aware that Russell is an automated system and may not always provide 100% accurate information. While we strive to provide accurate information, we cannot guarantee the accuracy, completeness, or timeliness of the information provided by Russell.</p>
       </div>
     </div>
@@ -45,7 +45,7 @@ export const ChatBtn: FC<{ onClick: () => void; className?: string }> = ({
 }) => {
   const { t } = useTranslation()
   return (
-    <div>
+    <div className="flex justify-center items-center">
       <Button
         type='primary'
         className={cn(className, `space-x-2 flex items-center ${s.customBtn}`)}

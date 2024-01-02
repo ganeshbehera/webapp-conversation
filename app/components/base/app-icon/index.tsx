@@ -16,16 +16,18 @@ const AppIcon: FC<AppIconProps> = ({
   imageUrl = 'https://grayfords.co.uk/wp-content/uploads/2023/02/logo-1.png',
 }) => {
   return (
-    <span
-      className={classNames(
-        style.appIcon,
-        size && style[size],
-        rounded && style.rounded,
-        className ?? '',
-      )}
-    >
-      <img src={imageUrl} alt="App Icon" className={style.appIconImage} />
-    </span>
+    <div className="flex justify-center items-center"> {/* Flex container for centering */}
+      <span
+        className={classNames(
+          style.appIcon,
+          size && style[size],
+          rounded && style.rounded,
+          className ?? '',
+        )}
+      >
+        <img src={imageUrl} alt="App Icon" className={style.appIconImage} />
+      </span>
+    </div>
   )
 }
 
