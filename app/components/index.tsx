@@ -416,7 +416,7 @@ const Main: FC = () => {
           </div>
         )}
         {/* main */}
-        <div className='flex-grow flex flex-col h-[calc(100vh_-_3rem)] overflow-y-auto' style={{ backgroundColor: '#1f2839' }}>
+        <div className='flex-grow flex flex-col h-[calc(100vh_-_3rem)] overflow-y-auto' style={{ backgroundColor: 'rgb(224 229 238)' }}>
           {/* Other components */}
           <ConfigSence
             conversationName={conversationName}
@@ -448,7 +448,7 @@ const Main: FC = () => {
           }
 
           {/* Privacy Notice Text */}
-          <p style={{ fontSize: '10px', color: '#fff', paddingLeft: '10%', paddingRight: '10%', paddingTop: '5%' }}>
+          <p style={{ fontSize: '10px', color: '#fff', paddingLeft: '10%', paddingRight: '10%', paddingTop: '5%', paddingBottom: '5%', background: 'rgb(100 114 122)' }}>
             We may collect personal information, such as your name and email address, when you interact with our Russell AI. We will only use this information to provide support and respond to your inquiries. We will not share your personal information with third parties unless we have your consent or are required by law to do so. By using our website and interacting with Russell you agree to the terms of this Privacy Notice and Disclaimer. If you have any questions or concerns about our privacy practices, please contact us at enquiries@grayfords.co.uk.
           </p>
         </div>

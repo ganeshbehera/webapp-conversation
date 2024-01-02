@@ -296,13 +296,13 @@ const Welcome: FC<IWelcomeProps> = ({
   }
 
   return (
-    <div className='relative mobile:min-h-[48px] tablet:min-h-[64px]' style={{ backgroundColor: '#1f2839' }}>
+    <div className='relative mobile:min-h-[48px] tablet:min-h-[64px]' style={{ backgroundColor: 'rgb(224 229 238)' }}>
       {hasSetInputs && renderHeader()}
       <div className='mx-auto pc:w-[794px] max-w-full mobile:w-full px-3.5'>
         {/*  Hasn't set inputs  */}
         {
           !hasSetInputs && (
-            <div className='mobile:pt-[72px] tablet:pt-[128px] pc:pt-[200px]'>
+            <div className='mobile:pt-[72px] tablet:pt-[128px] pc:pt-[30px]'>
               {hasVar
                 ? (
                   renderVarPanel()

@@ -14,9 +14,10 @@ export const AppInfoComp: FC<{ siteInfo: AppInfo }> = ({ siteInfo }) => {
   const { t } = useTranslation()
   return (
     <div>
-      <div className='flex items-center py-2 text-xl font-medium text-gray-700 rounded-md'>👏 {t('app.common.welcome')}</div>
-      <p className='text-sm text-gray-500'>Welcome to our very own Legal AI assistant “Russell“</p><br></br>
-      <p className='text-sm text-gray-500'>Russell will provide general information and support on various topics related to our services. He is not designed to provide legal advice and you should not rely on the information provided by the AI as a substitute for professional solicitor advice. Please be aware that the Russell is an automated system and may not always provide 100% accurate information.  While we strive to provide accurate information, we cannot guarantee the accuracy, completeness, or timeliness of the information provided by Russell.</p>
+      <div className="my-4 mx-auto max-w-full text-center text-gray-700">
+        <h1 style={{ fontSize: '26px', paddingBottom: '20px' }}>Welcome to our very own Legal AI assistant “Russell“</h1>
+        <p style={{ fontSize: '16px', lineHeight: '1.2em' }}>Russell will provide general information and support on various topics related to our services. He is not designed to provide legal advice and you should not rely on the information provided by the AI as a substitute for professional solicitor advice. Please be aware that Russell is an automated system and may not always provide 100% accurate information. While we strive to provide accurate information, we cannot guarantee the accuracy, completeness, or timeliness of the information provided by Russell.</p>
+      </div>
     </div>
   )
 }
@@ -44,15 +45,17 @@ export const ChatBtn: FC<{ onClick: () => void; className?: string }> = ({
 }) => {
   const { t } = useTranslation()
   return (
-    <Button
-      type='primary'
-      className={cn(className, `space-x-2 flex items-center ${s.customBtn}`)}
-      onClick={onClick}>
-      <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fillRule="evenodd" clipRule="evenodd" d="M18 10.5C18 14.366 14.418 17.5 10 17.5C8.58005 17.506 7.17955 17.1698 5.917 16.52L2 17.5L3.338 14.377C2.493 13.267 2 11.934 2 10.5C2 6.634 5.582 3.5 10 3.5C14.418 3.5 18 6.634 18 10.5ZM7 9.5H5V11.5H7V9.5ZM15 9.5H13V11.5H15V9.5ZM9 9.5H11V11.5H9V9.5Z" fill="white" />
-      </svg>
-      {t('app.chat.startChat')}
-    </Button>
+    <div>
+      <Button
+        type='primary'
+        className={cn(className, `space-x-2 flex items-center ${s.customBtn}`)}
+        onClick={onClick}>
+        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fillRule="evenodd" clipRule="evenodd" d="M18 10.5C18 14.366 14.418 17.5 10 17.5C8.58005 17.506 7.17955 17.1698 5.917 16.52L2 17.5L3.338 14.377C2.493 13.267 2 11.934 2 10.5C2 6.634 5.582 3.5 10 3.5C14.418 3.5 18 6.634 18 10.5ZM7 9.5H5V11.5H7V9.5ZM15 9.5H13V11.5H15V9.5ZM9 9.5H11V11.5H9V9.5Z" fill="white" />
+        </svg>
+        {t('app.chat.startChat')}
+      </Button>
+    </div>
   )
 }
 
