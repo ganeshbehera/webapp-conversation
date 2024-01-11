@@ -14,7 +14,7 @@ export const AppInfoComp: FC<{ siteInfo: AppInfo }> = ({ siteInfo }) => {
   const { t } = useTranslation()
   return (
     <div>
-      <div className="my-4 mx-auto max-w-full text-center text-gray-700">
+      <div className="my-4 mx-auto max-w-full text-left text-gray-700">
         <h1 style={{ fontSize: '26px', paddingBottom: '20px', lineHeight: '1.2em' }}>Welcome to our AI legal assistant "Russell"</h1>
         <p style={{ fontSize: '16px', lineHeight: '1.2em' }}>Russell will provide general information and support on various topics related to our services. He is not designed to provide legal advice and you should not rely on the information provided by the AI as a substitute for professional solicitor advice. Please be aware that Russell is an automated system and may not always provide 100% accurate information. While we strive to provide accurate information, we cannot guarantee the accuracy, completeness, or timeliness of the information provided by Russell.</p>
       </div>
