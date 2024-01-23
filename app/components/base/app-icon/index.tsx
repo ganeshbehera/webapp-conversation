@@ -16,7 +16,7 @@ const AppIcon: FC<AppIconProps> = ({
   imageUrl = 'https://grayfords.co.uk/wp-content/uploads/2023/02/logo-1.png',
 }) => {
   return (
-    <div className="flex justify-center items-center" style={{ paddingLeft: '250px' }}> {/* Flex container for centering */}
+    <div className="flex justify-center items-center w-full"> {/* Full width and flex container for centering */}
       <span
         className={classNames(
           style.appIcon,
